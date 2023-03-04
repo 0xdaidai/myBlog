@@ -141,7 +141,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "我的网站"
+    title = "呆呆的小窝~"
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
@@ -187,9 +187,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # 主页显示头像的 URL
       avatarURL = "/images/gaga.jpg"
       #  主页显示的网站标题 (支持 HTML 格式)
-      title = ""
+      title = "呆呆的小窝~"
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "这是我的全新 Hugo 网站"
+      subtitle = "K33p c4lm 4nd cr4sh th3 b1n4ry"
       # 是否为副标题显示打字机动画
       typeit = true
       # 是否显示社交账号
