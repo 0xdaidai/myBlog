@@ -16,7 +16,7 @@ hiddenFromSearch: true
 {{< friend name="Mobilis In Mobili_" url="https://justloseit.top/" logo="https://justloseit.top/img/about/about.jpg" word="中本航" >}}
 {{< friend name="ssgss" url="https://fyhssgss.github.io/" logo="https://fyhssgss.github.io/images/saiki.jpg" word="web king" >}}
 {{< friend name="pil10w" url="https://g00dfe11ow.github.io/" logo="https://g00dfe11ow.github.io/avatar.jpg" word="yet another web king" >}}
-{{< friend name="s1eepy" url="https://xz1548.github.io/" logo="https://xz1548.github.io/img/touxiang.jpg" word="He knows anything except misc" >}}
+{{< friend name="s1eepy" url="https://xz1548.github.io/" logo="https://xz1548.github.io/img/touxiang.jpg" word="know any except misc" >}}
 {{< friend name="newbiereer" url="https://newbiereer.github.io/" logo="https://newbiereer.github.io/images/touxiang.jpg" word="一曲长歌，一剑天涯" >}}
 {{< friend name="wood" url="https://wood1314.github.io/" logo="https://wood1314.github.io/images/avatar.jpg" word="stay hungry stay foolish." >}}
 {{< friend name="crazyman" url="https://crazymanarmy.github.io/" logo="https://s2.loli.net/2023/01/27/XA2Yr7TuwcNWhOp.jpg" word="CTF还得看空白神" >}}
