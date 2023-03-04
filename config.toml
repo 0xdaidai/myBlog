@@ -32,7 +32,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # 作者配置
 [author]
-  name = "xxxx"
+  name = "0xdaidai"
   email = ""
   link = ""
 
