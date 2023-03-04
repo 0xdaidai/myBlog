@@ -3,7 +3,15 @@
         <title>呆呆的小窝~</title>
         <link>https://0xdaidai.github.io/</link>
         <description>这是我的全新 Hugo 网站</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 05 Mar 2023 02:03:29 &#43;0800</lastBuildDate>
             <atom:link href="https://0xdaidai.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Friends</title>
+    <link>https://0xdaidai.github.io/friends/</link>
+    <pubDate>Sun, 05 Mar 2023 02:03:29 &#43;0800</pubDate>
+    <author>0xdaidai</author>
+    <guid>https://0xdaidai.github.io/friends/</guid>
+    <description><![CDATA[or4nge 小橘子真好吃~ s0uthwood 逆向天花板 t1anst GOD ttt triplewings next master of pwn Mobilis In Mobili_ 中本航 ssgss web king pil10w yet another web king s1eepy He knows anything except misc newbiereer 一曲长歌，一剑天涯 wood stay hungry stay foolish. crazyman CTF还得看空白神]]></description>
+</item>
+</channel>
 </rss>
