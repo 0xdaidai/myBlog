@@ -4,7 +4,6 @@ date: 2023-09-25T11:27:06+08:00
 draft: false
 ---
 
-# ADB
 ## USE ADB in WSL
 
 ```bash
