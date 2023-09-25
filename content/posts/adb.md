@@ -2,6 +2,8 @@
 title: "Adb"
 date: 2023-09-25T11:27:06+08:00
 draft: false
+tags: ["adb"]
+categories: ["pwn"]
 ---
 
 ## USE ADB in WSL
