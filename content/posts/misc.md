@@ -152,16 +152,21 @@ python:
 ```python
 from Crypto.Util.number import getPrime,bytes_to_long
 from pwn import *
-from parse import *
+import urllib.parse as parse
 from pwnlib.util.iters import bruteforce
 from hashlib import sha256
 
 def brute_force(prefix,s):
-    return bruteforce(lambda x:sha256((prefix+x).encode()).hexdigest()==s,string.ascii_letters+string.digits,length=4,method='fixed')
+    return bruteforce(lambda x:sha256((x+prefix).encode()).hexdigest()==s,string.ascii_letters+string.digits,length=4,method='fixed')
 
-p=remote('52.163.228.53', 8081)
-data = p.recvline()[:-1]
-prefix, s = parse("sha256(xxxx+{}) == {}",data.decode())
+
+p=remote('202.112.238.82', 10010)
+p.recvuntil(b"sha256(XXXX+")
+prefix = p.recvn(16).decode()
+p.recvuntil(b") == ")
+s = p.recvn(64).decode()
+log.warning(prefix)
+log.warning(s)
 p.sendline(brute_force(prefix,s))
 
 p.interactive()

