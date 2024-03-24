@@ -2,8 +2,8 @@
 title: idapython笔记
 date: 2021-03-01 22:24:05
 draft: false
-tags: ["pwn", "kernel"]
-categories: ["pwn"]
+tags: ["reverse"]
+categories: ["reverse"]
 ---
 
 # idapython
