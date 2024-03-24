@@ -11,7 +11,7 @@ categories: ["pwn"]
 <!-- more -->
 全部抄自《IDAPython 初学者指南》，手动翻译成了ida7.5+python3。
 ## 指令学习
-![ida-python指令大全](./ida_python/ida_python.png)
+![ida-python指令大全](../posts/ida_python/ida_python.png)
 ### 节区操作
 ```python
 ea = idc.get_screen_ea()
