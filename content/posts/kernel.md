@@ -6,6 +6,29 @@ tags: ["pwn", "kernel"]
 categories: ["pwn"]
 ---
 
+## kallsyms
+
+```python
+import idc
+import ida_funcs
+import ida_kernwin
+ksyms = open("/path/to/kallsyms.txt")
+for line in ksyms:
+ addr = int(line[0:16],16)
+ name = line[19:].replace('_','')
+ name = line[19:].replace('\n','')
+ idc.create_insn(addr)
+ ida_funcs.add_func(addr)
+ idc.set_name(addr,name)
+ ida_kernwin.msg("%08X:%s"%(addr,name))
+```
+
+## passwd
+
+```
+pwned:$1$aa$Sc4m1DBsyHWbRbwmIbGHq1:0:0:/root:/root:/bin/sh # 密码：lol
+```
+
 ## cpio
 
 ```c

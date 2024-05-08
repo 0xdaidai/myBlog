@@ -6,8 +6,9 @@ tags: ["misc"]
 categories: ["misc"]
 ---
 
-## exp
-```
+## exp template
+
+```python
 from pwn import *
 import sys
 context.log_level = "debug"
@@ -41,6 +42,12 @@ def debugf(b=0):
 #context.terminal = ['tmux', 'splitw', '-h']
 
 p.interactive()
+```
+
+## strace/socat
+
+```
+strace -fi /bin/socat 8899 ./challenge
 ```
 
 ## 查找错误git commit
@@ -147,7 +154,7 @@ int main(int argc, char const *argv[])
 // gcc -O2 pow.c -lcrypto && ./a.out pzlYZX5ZEb && rm ./a.out
 ```
 
-python:
+[pow](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7114b46c-fb76-4773-a514-f9cc8eeae1b4/pow.txt)
 
 ```python
 from Crypto.Util.number import getPrime,bytes_to_long
@@ -158,7 +165,6 @@ from hashlib import sha256
 
 def brute_force(prefix,s):
     return bruteforce(lambda x:sha256((x+prefix).encode()).hexdigest()==s,string.ascii_letters+string.digits,length=4,method='fixed')
-
 
 p=remote('202.112.238.82', 10010)
 p.recvuntil(b"sha256(XXXX+")
