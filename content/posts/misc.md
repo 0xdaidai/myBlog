@@ -291,3 +291,60 @@ bind-key -T root WheelDownPane \
 patchelf --set-interpreter ld_path xxx
 patchelf --set-rpath libc_dir xxx
 ```
+
+## ubuntu
+```bash
+export DEBIAN_FRONTEND=noninteractive
+
+sudo apt update
+sudo apt install -y ca-certificates
+
+#replace ubuntu source
+sudo sed -i "s@http://.*archive.ubuntu.com@https://mirrors.bfsu.edu.cn@g" /etc/apt/sources.list
+sudo sed -i "s@http://.*security.ubuntu.com@https://mirrors.bfsu.edu.cn@g" /etc/apt/sources.list
+
+#install many tools
+sudo apt update
+sudo apt install -y net-tools python3 python3-pip python-is-python3 git vim zsh gdb gdb-multiarch ipython3 musl-tools curl libc6-dbg
+sudo apt remove unattended-upgrades
+
+#replace pip source
+pip config set global.index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
+python -m pip install --upgrade pip
+
+#install pwntools
+pip3 install pwntools
+
+#install pwndbg
+cd ~ && git clone https://github.com/pwndbg/pwndbg.git
+cd ~/pwndbg && ./setup.sh
+
+#install pwngdb
+# cd ~ && git clone https://github.com/MrRtcl/Pwngdb.git
+# user='mrr'
+# pwndbg='/home/'$user'/pwndbg'
+# pwngdb='/home/'$user'/Pwngdb/pwndbg'
+# cp $pwngdb/pwngdb.py $pwndbg/pwndbg/pwngdb.py
+# cp $pwngdb/angelheap.py $pwndbg/pwndbg/angelheap.py
+# cp $pwngdb/commands/pwngdb.py $pwndbg/pwndbg/commands/pwngdb.py
+# cp $pwngdb/commands/angelheap.py $pwndbg/pwndbg/commands/angelheap.py
+# sed -i -e '/import pwndbg.commands.xor/a \ \ \ \ import pwndbg.commands.pwngdb' $pwndbg/pwndbg/commands/__init__.py
+# sed -i -e '/import pwndbg.commands.xor/a \ \ \ \ import pwndbg.commands.angelheap' $pwndbg/pwndbg/commands/__init__.py
+
+# install angr
+pip3 install angr
+pip3 install z3-solver
+
+# #install iTermBackend
+# git clone https://github.com/DarkEyeR/iTermBackend.git
+# cd ~/iTermBackend && ./setup.sh
+
+# #ddns-go
+# mkdir ddns-go
+# wget https://github.com/jeessy2/ddns-go/releases/download/v4.5.6/ddns-go_4.5.6_linux_x86_64.tar.gz -O ./ddns-go/ddns-go.tar.gz
+# cd ddns-go && tar -zxvf ddns-go.tar.gz
+
+install oh-my-zsh
+sudo apt install -y zsh wget
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
