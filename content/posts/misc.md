@@ -32,6 +32,10 @@ sl = lambda x : p.sendline(x)
 rv = lambda x : p.recv(x)
 sa = lambda a,b : p.sendafter(a,b)
 sla = lambda a,b : p.sendlineafter(a, b)
+uu32 = lambda x   : u32(x.ljust(4, b'\0'))
+uu64 = lambda x   : u64(x.ljust(8, b'\0'))
+p32s = lambda *xs : flat([p32(x) for x in xs])
+p64s = lambda *xs : flat([p64(x) for x in xs])
 
 def debugf(b=0):
     if debug:
