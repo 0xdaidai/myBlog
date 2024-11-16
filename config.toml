@@ -31,9 +31,9 @@ enableEmoji = true
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 # 作者配置
-[author]
+[params.author]
   name = "0xdaidai"
-  email = ""
+  email = "ret2daidai@gmail.com"
   link = ""
 
 # 菜单配置

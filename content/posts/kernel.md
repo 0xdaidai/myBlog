@@ -1,6 +1,6 @@
 ---
 title: "Kernel"
-date: 2023-09-25T11:37:02+08:00
+date: 2077-09-25T11:37:02+08:00
 draft: false
 tags: ["pwn", "kernel"]
 categories: ["pwn"]
