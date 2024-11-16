@@ -1,9 +1,10 @@
 ---
 title: "Misc"
-date: 2077-09-25T11:22:31+08:00
+date: 2023-09-25T11:22:31+08:00
 draft: false
 tags: ["misc"]
 categories: ["misc"]
+weight: 1
 ---
 
 ## exp template
