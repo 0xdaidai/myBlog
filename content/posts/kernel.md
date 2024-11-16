@@ -1,6 +1,6 @@
 ---
 title: "Kernel"
-date: 2023-09-25T11:37:02+08:00
+date: 2077-09-25T11:37:02+08:00
 draft: false
 tags: ["pwn", "kernel"]
 categories: ["pwn"]
@@ -288,4 +288,43 @@ exit
 ## 泄露
 ```c
 cat /sys/kernel/notes
+```
+
+## swapgs_restore_regs_and_return_to_usermode
+
+```c
+mov     rdi, rsp  <==== here
+mov     rsp, qword ptr gs:unk_6004
+push    qword ptr [rdi+30h]
+push    qword ptr [rdi+28h]
+push    qword ptr [rdi+20h]
+push    qword ptr [rdi+18h]
+push    qword ptr [rdi+10h]
+push    qword ptr [rdi]
+push    rax
+jmp     short loc_FFFFFFFF81200F89
+
+```
+
+## find init_cred
+```c
+_DWORD *__fastcall prepare_kernel_cred(__int64 a1)
+{
+_DWORD *v1; // rbx
+int *task_cred; // rbp
+
+v1 = (_DWORD *)kmem_cache_alloc(qword_FFFFFFFF82735900, 20971712LL);
+if ( !v1 )
+ return 0LL;
+if ( a1 )
+{
+ task_cred = (int *)get_task_cred(a1);
+}
+else
+{
+ _InterlockedIncrement(dword_FFFFFFFF8223D1A0);
+ task_cred = dword_FFFFFFFF8223D1A0; // init_cred
+}
+[......]
+}
 ```

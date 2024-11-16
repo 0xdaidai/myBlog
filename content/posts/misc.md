@@ -1,6 +1,6 @@
 ---
 title: "Misc"
-date: 2023-09-25T11:22:31+08:00
+date: 2077-09-25T11:22:31+08:00
 draft: false
 tags: ["misc"]
 categories: ["misc"]
@@ -294,6 +294,12 @@ bind-key -T root WheelDownPane \
 ```c
 patchelf --set-interpreter ld_path xxx
 patchelf --set-rpath libc_dir xxx
+```
+
+## ropper
+
+```c
+ropper --file ./vmlinux --nocolor > g1
 ```
 
 ## ubuntu
