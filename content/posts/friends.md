@@ -14,13 +14,12 @@ hiddenFromSearch: true
 {{< friend name="t1anst" url="https://tianstcht.github.io/" logo="https://tianstcht.github.io/images/1.png" word="GOD ttt" >}}
 {{< friend name="triplewings" url="https://kfxp12138.github.io/" logo="https://kfxp12138.github.io//images/avatar.png?v=1672987367917" word="next master of pwn" >}}
 {{< friend name="Mobilis In Mobili_" url="https://justloseit.top/" logo="https://justloseit.top/img/about/about.jpg" word="中本航" >}}
-{{< friend name="ssgss" url="https://fyhssgss.github.io/" logo="https://fyhssgss.github.io/images/saiki.jpg" word="web king" >}}
+{{< friend name="ssgss" url="https://fyhssgss.github.io/" logo="https://fyhssgss.github.io/images/saiki.jpg" word="web king, Doctor.Fu" >}}
 {{< friend name="pil10w" url="https://g00dfe11ow.github.io/" logo="https://g00dfe11ow.github.io/avatar.jpg" word="yet another web king" >}}
 {{< friend name="s1eepy" url="https://xz1548.github.io/" logo="https://xz1548.github.io/img/touxiang.jpg" word="know any except misc" >}}
-{{< friend name="newbiereer" url="https://newbiereer.github.io/" logo="https://newbiereer.github.io/images/touxiang.jpg" word="一曲长歌，一剑天涯" >}}
 {{< friend name="wood" url="https://wood1314.github.io/" logo="https://wood1314.github.io/images/avatar.jpg" word="stay hungry stay foolish." >}}
 {{< friend name="crazyman" url="https://crazymanarmy.github.io/" logo="https://s2.loli.net/2023/01/27/XA2Yr7TuwcNWhOp.jpg" word="CTF还得看空白神" >}}
-
+{{< friend name="xman" url="https://xiananren.github.io/" logo="https://avatars.githubusercontent.com/u/75611657?v=4" word="安全启动先驱，ai金种子，游戏安全的👑" >}}
 
 </div>
 </div>
